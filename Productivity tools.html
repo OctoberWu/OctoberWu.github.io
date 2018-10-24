@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="Stylesheet" type="text/css" href="static/css/wiki.css">
+    <link rel="Stylesheet" type="text/css" href="static/bootstrap/css/bootstrap.min.css">
+    <script type="text/javascript" src="static/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="static/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="static/js/wiki.js"></script>
+    <title>Productivity tools</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active"><a class="nav-link" href="index.html">Index</a>
+          </li>
+          <li class="nav-item active"><a class="nav-link" href="diary/diary.html">Diary</a>
+          </li>
+          <li class="nav-item active"><a class="nav-link" href="TODO.html">TODO</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+
+    <div class="container content-body">
+        
+<div id="vimwiki cheatsheet"><h2 id="vimwiki cheatsheet">vimwiki cheatsheet</h2></div>
+<div id="vimwiki cheatsheet-Basic Markup"><h4 id="Basic Markup" class="justcenter">Basic Markup</h4></div>
+<pre markdown>
+        = Header1 =
+        == Header2 ==
+        === Header3 ===
+
+        *bold text*
+        _italic text_
+
+        [[wiki link]]
+        [[wiki link|description]]
+
+        * bullet list item 1
+        * bullet list item 2
+            a) numbered list item 1
+            b) numbered list item 2
+
+        | a table |   |
+        |---------|---|
+        |         |   |
+</pre>
+<blockquote>
+Q: how to do quote in quote?
+</blockquote>
+<div id="vimwiki cheatsheet-Key bindings"><h4 id="Key bindings" class="justcenter">Key bindings</h4></div>
+<blockquote>
+<span id="vimwiki cheatsheet-Key bindings-normal mode:"></span><strong id="normal mode:">normal mode:</strong>
+</blockquote>
+<ul>
+<li>
+&lt;Leader&gt;ww -- Open default wiki index file.
+
+<li>
+&lt;Leader&gt;wt -- Open default wiki index file in a new tab.
+
+<li>
+&lt;Leader&gt;ws -- Select and open wiki index file.
+
+<li>
+&lt;Leader&gt;wd -- Delete wiki file you are in.
+
+<li>
+&lt;Leader&gt;wr -- Rename wiki file you are in.
+
+<li>
+&lt;Enter&gt; -- Follow/Create wiki link
+
+<li>
+&lt;Shift-Enter&gt; -- Split and follow/create wiki link
+
+<li>
+&lt;Ctrl-Enter&gt; -- Vertical split and follow/create wiki link
+
+<li>
+&lt;Backspace&gt; -- Go back to parent(previous) wiki link
+
+<li>
+&lt;Tab&gt; -- Find next wiki link
+
+<li>
+&lt;Shift-Tab&gt; -- Find previous wiki link
+
+<li>
+For more keys, see :h vimwiki-mappings
+
+</ul>
+    
+<div id="vimwiki cheatsheet-Commands"><h4 id="Commands" class="justcenter">Commands</h4></div>
+<ul>
+<li>
+:Vimwiki2HTML -- Convert current wiki link to HTML
+
+<li>
+:VimwikiAll2HTML -- Convert all your wiki links to HTML
+
+<li>
+:help vimwiki-commands -- list all commands
+
+</ul>
+
+    </div>
+</body>
+</html>
